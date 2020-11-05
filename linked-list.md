@@ -1,4 +1,4 @@
-# Arrays
+# Linked-list
 
 + [206. Reverse Linked List](#206_reverse-linked-list)
 + [876. Middle of the Linked List](876-middle-of-the-linked-list)
