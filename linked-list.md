@@ -1,6 +1,6 @@
 # Linked-list
 
-+ [19. Remove Nth Node From End of List](19-remove-nth-node-from-end-of-list)
++ [Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
 + [21. Merge Two Sorted Lists](21-merge-two-sorted-lists)
 + [141. Linked List Cycle](141-linked-list-cycle)
 + [142. Linked List Cycle II](142-linked-list-cycle-II)
@@ -10,7 +10,7 @@
 + [876. Middle of the Linked List](876-middle-of-the-linked-list)
 
 
-## 206. Reverse Linked List
+## Reverse Linked List
 
 https://leetcode.com/problems/reverse-linked-list/
 

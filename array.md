@@ -1,15 +1,15 @@
 # Arrays
 
-+ [485. Max Consecutive Ones](#485-max-consecutive-ones)
-+ [566. Reshape the Matrix](#566-reshape-the-matrix)
-+ [661. Image Smoother](#661-image-smoother)
-+ [832. Flipping an Image](#832-flipping-an-image)
-+ [867. Transpose Matrix](#867-transpose-matrix)
-+ [283. Move Zeroes](283-move-zeroes)
-+ [977. Squares of a Sorted Array](977-squares-of-a-sorted-array)
++ [Max Consecutive Ones](#max-consecutive-ones)
++ [Reshape the Matrix](#reshape-the-matrix)
++ [Image Smoother](#image-smoother)
++ [Flipping an Image](#flipping-an-image)
++ [867. Transpose Matrix](#transpose-matrix)
++ [283. Move Zeroes](#move-zeroes)
++ [977. Squares of a Sorted Array](#squares-of-a-sorted-array)
 
 
-## 485. Max Consecutive Ones
+## Max Consecutive Ones
 
 https://leetcode.com/problems/max-consecutive-ones/
 
@@ -32,7 +32,7 @@ class Solution {
 
 ```
 
-## 566. Reshape the Matrix
+## Reshape the Matrix
 
 https://leetcode.com/problems/reshape-the-matrix/
 
