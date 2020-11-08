@@ -8,6 +8,7 @@
 + [206. Reverse Linked List](206_reverse-linked-list)
 + [234. Palindrome Linked List](234-palindrome-linked-list)
 + [876. Middle of the Linked List](876-middle-of-the-linked-list)
++ [Intersection of Two Linked Lists](#intersection-of-two-linked-lists)
 
 
 ## Reverse Linked List
@@ -326,3 +327,15 @@ This problem is a combination of these three easy problems:
 876. Middle of the Linked List
 206. Reverse Linked List
 21. Merge Two Sorted Lists
+
+## Intersection of Two Linked Lists
+
+https://leetcode.com/problems/intersection-of-two-linked-lists/
+
+```java
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        
+    }
+}
+```
