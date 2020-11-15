@@ -153,18 +153,32 @@ Both l1 and l2 are sorted in non-decreasing order.
 ```java
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode curLeft = l1;
+        ListNode curRight = l2;
+        ListNode dummyHead = new ListNode();
+        ListNode curRes = dummyHead;
         
-        if(l1 == null){
-            return l2;
-        }else if(l2 == null){
-            return l1;
-        }else if (l1.val <l2.val){
-            l1.next= mergeTwoLists(l1.next, l2);
-            return l1;
-        }else{
-            l2.next = mergeTwoLists(l1, l2.next);
-            return l2;
-       }  
+        while(curLeft != null && curRight != null){
+            if(curLeft.val < curRight.val){
+                curRes.next = curLeft;
+                curLeft = curLeft.next;
+            } else {
+                curRes.next = curRight;
+                curRight = curRight.next;
+            }  
+            curRes = curRes.next;
+        } 
+        while(curLeft != null){
+            curRes.next = curLeft;
+            curLeft = curLeft.next;
+            curRes = curRes.next;
+        }
+        while(curRight != null){
+            curRes.next = curRight;
+            curRight = curRight.next;
+            curRes = curRes.next;
+        }    
+        return dummyHead.next;
     }
 }
 ```
