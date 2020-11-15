@@ -233,6 +233,50 @@ class Solution {
     }
 }
 ```
+```java
+class Solution {
+    
+    public int getFirstNonNegative(int[] A) {
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] >= 0) {
+                return i;
+            }
+        }
+        return A.length;
+    }
+    
+    public int[] sortedSquares(int[] A) {
+        int indx = getFirstNonNegative(A);
+        int left = indx - 1;
+        int right = indx;
+        int[] res = new int[A.length];
+        int indRes = 0;
+            
+        while (left >= 0 && right < A.length) {
+            if (A[left] * A[left] < A[right] * A[right]) {
+                res[indRes] = A[left] * A[left];
+                left--;
+            } else {
+                res[indRes] =A[right] * A[right];
+                right++;
+            }
+            indRes++;
+        }
+            
+        while (left >= 0) {
+            res[indRes++] = A[left] * A[left];
+            left--; 
+        }
+            
+        while (right < A.length) {
+            res[indRes++] =A[right] * A[right];
+            right++;
+        }
+            
+        return res;
+    }
+}
+```
 
 
 
