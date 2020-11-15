@@ -1,13 +1,13 @@
 # Linked-list
 
-+ [Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
-+ [Merge Two Sorted Lists](#21-merge-two-sorted-lists)
-+ [Linked List Cycle](#141-linked-list-cycle)
-+ [Linked List Cycle II](#142-linked-list-cycle-II)
-+ [Reorder List](#143-reorder-list)
-+ [Reverse Linked List](#206_reverse-linked-list)
-+ [Palindrome Linked List](#234-palindrome-linked-list)
-+ [Middle of the Linked List](#876-middle-of-the-linked-list)
++ [Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)
++ [Merge Two Sorted Lists](#merge-two-sorted-lists)
++ [Linked List Cycle](#linked-list-cycle)
++ [Linked List Cycle II](#linked-list-cycle-II)
++ [Reorder List](#reorder-list)
++ [Reverse Linked List](#reverse-linked-list)
++ [Palindrome Linked List](#palindrome-linked-list)
++ [Middle of the Linked List](#middle-of-the-linked-list)
 
 
 ## Reverse Linked List
@@ -177,6 +177,34 @@ class Solution {
             curRes.next = curRight;
             curRight = curRight.next;
             curRes = curRes.next;
+        }    
+        return dummyHead.next;
+    }
+}
+```
+```java
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode curLeft = l1;
+        ListNode curRight = l2;
+        ListNode dummyHead = new ListNode();
+        ListNode curRes = dummyHead;
+        
+        while(curLeft != null && curRight != null){
+            if(curLeft.val < curRight.val){
+                curRes.next = curLeft;
+                curLeft = curLeft.next;
+            } else {
+                curRes.next = curRight;
+                curRight = curRight.next;
+            }  
+            curRes = curRes.next;
+        } 
+        if (curLeft != null){
+            curRes.next = curLeft;
+        }
+        if (curRight != null){
+            curRes.next = curRight;
         }    
         return dummyHead.next;
     }
