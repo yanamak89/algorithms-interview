@@ -7,6 +7,7 @@
 + [Transpose Matrix](#transpose-matrix)
 + [Move Zeroes](#move-zeroes)
 + [Squares of a Sorted Array](#squares-of-a-sorted-array)
++ [Running Sum of 1d Array](#running-sum-of-1d-array)
 
 
 ## Max Consecutive Ones
@@ -278,5 +279,16 @@ class Solution {
 }
 ```
 
+## Running Sum of 1d Array
+https://leetcode.com/problems/running-sum-of-1d-array/
+```java
+class Solution {
+    public int[] runningSum(int[] nums) {
+        for(int i= 1; i< nums.length; i++){
+            nums[i] = nums[i] + nums[i-1];
+        }return nums;
 
+    }
+}
 
+```
